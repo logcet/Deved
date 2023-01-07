@@ -1,0 +1,86 @@
+@media screen and (max-width:900px){
+        body {
+        width: 60%;
+        height: 100%;
+            background: #80D8FF no-repeat 100%  fixed;
+          overflow: hidden;
+        }
+        h1{ color:#f8ff80;}
+        img{/* display: none;*/
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: img 4s infinite;
+            
+        }
+        @keyframes img {
+            0%{ transform: translateX(-50%) skewX(20deg);}
+            50%{ transform: translateX(-50%) skewY(20deg);}
+            60%{ transform: translateX(-50%) skewX(20deg);}
+            70%{ transform: translateX(-50%) skewY(20deg);}
+        }
+        
+        #tex {
+       display: none;
+      /*background-color: rgba(220,231,177,0.5);*/
+      
+ background-image:linear-gradient(#a1ffd9,#f3ff77);
+        position: absolute;
+        width: 300px;
+        height:250px;
+        text-align: center;
+        top: 30%;
+        transform: translateY(-30%);
+        left: 50%;
+        transform: translateX(-50%);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border: double 5px #15a1ff;
+        animation: ex 10s infinite;
+        box-shadow: 5px 5px 5px 5px rgba(220,50,7,0.5);
+        }
+        @keyframes ex{
+            0%{border:double 5px #ff5540;}
+            50%{border:double 5px #ff15d2;}
+            60%{border:double 5px #80c1ff;}
+            70%{border:double 5px #fff155;}
+            80%{border:double 5px #2bff96;}
+        }
+        #tex button{
+        width: 150px;
+        font-size: 20px;
+        font-family:Georgia;
+        padding: 5px 5px;
+       color: white;
+       outline: none;
+       border: double 5px; background-image:linear-gradient(#2f80ff,#3ccbff);
+       animation: bu 5s infinite;
+       }
+       @keyframes bu{
+           0%{}
+           50%{/*border-bottom: #f4ffaa ;
+        border-top:#2bff96 ;*/}
+           60%{
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;}
+           
+       }
+       #hh{
+           position: absolute;
+           left: 40%;
+           top: 10%;
+          color:red;
+          box-shadow: 2px 2px 2px 2px #80c1ff;
+          font-size: 30px;
+          letter-spacing: 5px;
+       }
+       h3{
+           position: absolute;
+           top: 20%;
+       }
+        }
